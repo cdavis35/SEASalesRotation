@@ -483,22 +483,17 @@
   const AVCOLORS = ['av-navy','av-teal','av-orange','av-amber','av-green','av-gray','av-coral'];
 
   let smes = [
-    { name: 'Jordan Mills',  calls: 12, lastCall: 'Apr 28', avail: 'open',  skips: 0, email: '' },
-    { name: 'Priya Anand',   calls: 11, lastCall: 'Apr 25', avail: 'open',  skips: 0, email: '' },
-    { name: 'Marcus Webb',   calls: 14, lastCall: 'May 1',  avail: 'busy',  skips: 1, email: '' },
-    { name: 'Sara Cho',      calls: 10, lastCall: 'Apr 22', avail: 'open',  skips: 0, email: '' },
-    { name: 'Devon Reyes',   calls: 13, lastCall: 'Apr 30', avail: 'check', skips: 0, email: '' },
+    { name: 'Derek Hartl',         calls: 0, lastCall: 'Never', avail: 'open', skips: 0, email: 'dhartl@capturehighered.com' },
+    { name: 'Rebecca Finn Kenney', calls: 0, lastCall: 'Never', avail: 'open', skips: 0, email: 'rfinn@capturehighered.com' },
+    { name: 'Kate Howard',         calls: 0, lastCall: 'Never', avail: 'open', skips: 0, email: 'khoward@capturehighered.com' },
+    { name: 'Paige Rooney',        calls: 0, lastCall: 'Never', avail: 'open', skips: 0, email: 'prooney@capturehighered.com' },
+    { name: 'Anna Miner',          calls: 0, lastCall: 'Never', avail: 'open', skips: 0, email: 'aminer@capturehighered.com' },
   ];
 
   let upNextIdx = 0;
   let reqMode = 'next';
 
-  let history = [
-    { sea: 'Sara Cho',     rep: 'T. Barnes', inst: 'Lakewood University', date: 'May 1',  status: 'complete' },
-    { sea: 'Marcus Webb',  rep: 'J. Ortiz',  inst: 'Ridgemont College',   date: 'Apr 30', status: 'complete' },
-    { sea: 'Jordan Mills', rep: 'A. Patel',  inst: 'Westfield State',     date: 'Apr 28', status: 'complete' },
-    { sea: 'Priya Anand',  rep: 'C. Nguyen', inst: 'Harmon Tech',         date: 'Apr 25', status: 'complete' },
-  ];
+  let history = [];
 
   function initials(name) {
     return name.split(' ').map(p => p[0]).join('').toUpperCase();
